@@ -1,0 +1,413 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* font-size: .91rem; */
+    color: #000000;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+h1{
+    
+    font-size: 2em;
+    color: black;
+    margin-top: 0;
+    margin: .1em;
+    letter-spacing: 0.1rem;
+    
+}
+
+header{
+    overflow-x: hidden;
+    flex-direction: column;
+    text-align: center;
+    background: url(./photo/headerimg.jpg)no-repeat center/cover; 
+    /*https://www.wallpaperflare.com/finance-professional-broker-financial-advisor-analyst-cfa-investor-activist-trader-with-copyspace-wallpaper-agmys/download*/
+    padding: 5em 0 39.6em;
+    padding-bottom: -10em;
+}
+#title{
+    
+
+    font-size: 2em;
+    /* font-weight: bold; */
+    color: #272727;
+    margin:0 .2em 0 .2em;
+    letter-spacing: 0.1rem;
+}
+.icon{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: rgb(245, 245, 245);
+    padding: .6em;
+    margin-right:1.5em;
+    /* margin-bottom: 2em; */
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+}
+.icon:hover,
+.icon:focus{
+    transform: scale(1.15);
+}
+
+[data-tooltip]{
+    position: relative;
+}
+
+[data-tooltip]:hover::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 100%;
+    background-color:#61606060;
+    color: white;
+    padding: .25rem;
+    /* top: .5em; */
+    bottom: -2.3em;
+    left: 100%;
+    transform: translate(-100%);
+}
+
+/* Nav */
+.container-flex{
+    width: 90%;
+    max-width: 900px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* box-shadow: 0 8px 6px -6px black; */
+}
+
+#fixsubtitle{
+font-size: 1.6em;
+font-weight: 600;
+color: rgb(255, 0, 255);
+}
+#subtitle{
+    font-weight:bold;
+    color: orange;
+    font-size: 1.3em;
+    margin: .5em 0 0 0;
+    letter-spacing: 0.2rem;
+    border:solid .2em rgb(255, 255, 255);
+    margin-right: .3em;
+    padding-left: .3em;
+    /* text-transform: uppercase; */
+}
+
+nav ul{
+    
+    padding: 0;
+    list-style:none;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    margin-left:1em;
+}
+li:nth-child(4){
+    margin-right: 1em;
+}
+nav a{
+    text-decoration: none;
+    color:blue;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: .25em 0 0 0;
+}
+nav ul a:hover,
+nav ul a:focus{
+    color:blue;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+
+.scroll-down{
+    height: 80px;
+    width: 40px;
+    position: absolute;
+    right: 50%;
+    bottom:5em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.scroll-down:before,
+.scroll-down:after{
+    content: '';
+    position: absolute;
+    top:10%;
+    left:50%;
+    border: .4em solid yellow;
+    height: 4em;
+    width: 4em;
+    transform: translate(-50%,-100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::after{
+    top:30%;
+    animation-delay: .5s;
+}
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+@media(min-width:675px){
+    header{
+      
+        padding: 5em 0 39.6em;
+       
+    }
+    .container-flex{
+        flex-direction: row;
+    } 
+    #subtitle{
+        margin-bottom: 0.5em;
+    }
+}
+
+
+/* Section-about */
+section{
+    overflow-x: hidden;
+    background: #282828;
+    margin: auto;
+    font-size: .91rem;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+}
+.container-section{
+    /* padding-top: 5em; */
+    width: 100%;
+    max-width: 900px;
+    margin-top:auto;
+    color: white;
+    margin:5em 0 5em 0;
+}
+.container-about{
+    padding:5em 0 10em 0;
+    margin:0 2em 0 2em;
+}
+.container-internship{
+    padding:0 0 10em 0;
+    margin:0 2em 0 2em;
+    
+}
+.container-skills{
+    padding:0 0 10em 0;
+    margin:0 2em 0 2em;
+    
+}
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1em;
+}
+
+.flex-item {
+    margin:.5em;
+    margin-bottom:1em;
+    color: black;
+    background-color: #f1f1f1;
+    padding:1em;
+    flex: 100%;
+    border-radius: 1em;
+  }
+  .container-internship img{
+      height: 5em;
+    }
+
+    img.playicon{
+        width: fit-content;
+        height: 3em;
+    }
+        a b1:hover,
+         a b1:focus{
+              font-weight: bold;
+              text-decoration: underline;
+        }
+        
+  .container-skills img{
+      width: 5em;
+      height: 5em;
+    }
+.flex-item h3{
+    font-size: 1.5em;
+  }
+.flex-item p{
+    font-size: 1em;
+  }
+
+.container-projects{
+    padding:0 0 10em 0;
+    margin:0 2em 0 2em;
+}
+.container-projects img{
+    width: 2em;
+    height: 2em;
+    margin:0 .5em 0 .5em;
+    
+}
+.container-contact{
+    padding:0;
+    margin:0 2em 0 2em;
+}
+#about,#internship,#skills,#projects,#contact{
+    font-size: 1.5em;
+    text-align: center;
+    color: aqua;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    
+}
+
+p{
+    word-spacing: 0.1em;
+    letter-spacing: .09em;
+    font-size:1em;
+}
+@media(min-width:675px){
+   .container-section{
+    width: 50%;
+    max-width: 500px;
+    margin:auto;
+    color: white;
+}
+.container-about{
+    padding: 5em 0 10em 0;
+    margin: 0;
+}
+.container-internship{
+    padding: 5em 0 10em 0;
+    margin: 0;
+}
+.container-skills{
+    padding: 5em 0 10em 0;
+    margin: 0;
+}
+
+.container-projects{
+    padding: 5em 0 10em 0;
+    margin: 0;
+}
+.container-contact{
+    padding: 5em 0 2em 0;
+    margin: 0;
+}
+footer{
+    text-align: center;
+    margin-bottom:10em;
+}
+
+}
+@media (max-width:800px)
+{
+    .flex-item-right, .flex-item-left {
+        flex: 100%;
+      }
+}
+
+/* Contact */
+ .contact{
+    margin-top: 2em;
+    /* margin-bottom: -2em; */
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,0%);
+    padding:30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+   
+  }
+
+  .text{
+      border: 1px solid gray;
+      font-size: 1em;
+      margin: 8px 0;
+      padding: 12px 18px;
+      border-radius: 8px;
+      box-shadow:0 10px 20px rgb(0 0 0 / 50%);
+    }
+    
+    .text label{
+     
+    display: block;
+    text-align: left;
+    color:black;
+    text-transform: uppercase; 
+    font-size: 1.5em;
+    font-weight: bolder !important;
+    letter-spacing: .1em;
+
+  }
+
+  .text input, .text textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    margin-top:0;
+
+  }
+
+  .button{
+    display: inline-block;
+    border: none;
+    color: black;
+    padding:0.8em;
+    margin-top: .5em;
+    margin-bottom: -1em;
+    transition: opacity 1s ease-in-out;
+    text-decoration: none;
+    font-size: large;
+    letter-spacing: .2em;
+    border: .1em solid black;
+    border-radius: .2em;
+    box-shadow:0 10px 20px rgb(0 0 0 / 20%);
+}
+.button:hover{
+    /* opacity: 0.1; */
+    background: white;
+  transform: scale(1.1);
+  }
+
+
+  /* Footer */
+
+  footer{
+      text-align: center;
+      margin-bottom:5em !important;
+      color: white;
+
+  }
+  footer a{
+      text-decoration: none;
+      color: white;
+  }
