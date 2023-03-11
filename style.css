@@ -254,6 +254,12 @@ section{
 .flex-item h3{
     font-size: 1.5em;
   }
+
+  .flex-item h4:hover{
+    font-size: medium;
+    color: orangered;
+    text-decoration: underline;
+  }
 .flex-item p{
     font-size: 1em;
   }

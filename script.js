@@ -53,7 +53,7 @@ var typewriter = new Typewriter(skills, {
 		
 	  });	
 
-//
+//projects
 var projects = document.getElementById('projects');
 var typewriter = new Typewriter(projects, {
 
@@ -64,6 +64,8 @@ var typewriter = new Typewriter(projects, {
 		delay: 80,
 		
 	  });	
+
+//contact
 var contact = document.getElementById('contact');
 var typewriter = new Typewriter(contact, {
 
@@ -84,16 +86,20 @@ document.querySelector("#contactForm").addEventListener("submit", function (e) {
 	.getElementsByTagName("input")[1].value;
 	var message = document
 	.querySelector("#contactForm")
+	.getElementsByTagName("input")[2].value;
+	var message = document
+	.querySelector("#contactForm")
 	.getElementsByTagName("textarea")[0].value;
 	e.preventDefault();
-	sweetAlert("Thank you !\nYour message is sent.")			
+	sweetAlert("Thank you !\nYour message is sent to Developer.")			
 			var templateParams={
 				fname:document.getElementById("fname").value,
 				mail:document.getElementById("mail").value,
+				tel:document.getElementById("tel").value,
 			msg:document.getElementById("msg").value,
 		  };
 	
-		emailjs.send("#", "#", templateParams).then(
+		emailjs.send("rasif", "rasiftemp", templateParams).then(
 			function (response) {
 				console.log("SUCCESS!", response.status, response.text);
 				
@@ -101,5 +107,8 @@ document.querySelector("#contactForm").addEventListener("submit", function (e) {
 		);
 		document.getElementById('fname').value="";
 			document.getElementById('mail').value="";
+			document.getElementById('tel').value="";
 			document.getElementById('msg').value="";
 	});
+
+
