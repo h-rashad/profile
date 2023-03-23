@@ -224,6 +224,12 @@ section{
     margin: 1em;
 }
 
+.container-card .flex-item .highlight:hover{
+            font-weight: bold;
+            color: blue;
+            cursor: pointer;
+}
+
 .flex-item {
     margin:.5em;
     margin-bottom:1em;
