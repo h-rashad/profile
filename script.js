@@ -65,6 +65,18 @@ var typewriter = new Typewriter(projects, {
 		
 	  });	
 
+//paper
+var paper = document.getElementById('paper');
+var typewriter = new Typewriter(paper, {
+
+	strings:['Paper Work'],
+	
+	autoStart: true,
+	  loop: true,
+		delay: 80,
+		
+	  });	
+
 //contact
 var contact = document.getElementById('contact');
 var typewriter = new Typewriter(contact, {
