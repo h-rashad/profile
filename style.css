@@ -270,11 +270,23 @@ section{
     font-size: 1em;
   }
 
+.flex-item p span{
+    color: blue; 
+    text-decoration: underline; 
+    font-weight: bold;
+  }
+
 .container-projects{
     padding:0 0 10em 0;
     margin:0 2em 0 2em;
 }
 .container-projects img{
+    width: 2em;
+    height: 2em;
+    margin:0 .5em 0 .5em;
+    
+}
+.container-paper img{
     width: 2em;
     height: 2em;
     margin:0 .5em 0 .5em;
