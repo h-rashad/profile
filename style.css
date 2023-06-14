@@ -207,6 +207,11 @@ section{
     padding:5em 0 10em 0;
     margin:0 2em 0 2em;
 }
+.container-experience{
+    padding:0 0 10em 0;
+    margin:0 2em 0 2em;
+    
+}
 .container-internship{
     padding:0 0 10em 0;
     margin:0 2em 0 2em;
@@ -224,6 +229,8 @@ section{
     margin: 1em;
 }
 
+
+
 .container-card .flex-item .highlight:hover{
             font-weight: bold;
             color: blue;
@@ -239,8 +246,14 @@ section{
     flex: 100%;
     border-radius: 1em;
   }
-  .container-internship img{
+
+/* Experience Container card*/
+ .container-experience img{
       height: 5em;
+    }
+/* Internship Container card*/
+ .container-internship img{
+     height: 5em;
     }
 
     img.playicon{
@@ -296,7 +309,7 @@ section{
     padding:0;
     margin:0 2em 0 2em;
 }
-#about,#internship,#skills,#projects,#paper,#contact{
+#about,#experience,#internship,#skills,#projects,#paper,#contact{
     font-size: 1.5em;
     text-align: center;
     color: aqua;
@@ -318,6 +331,10 @@ p{
     color: white;
 }
 .container-about{
+    padding: 5em 0 10em 0;
+    margin: 0;
+}
+.container-experience{
     padding: 5em 0 10em 0;
     margin: 0;
 }
