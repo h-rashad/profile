@@ -185,6 +185,13 @@ nav ul a:focus{
     }
 }
 
+@media(max-width:350px){
+    
+    #fixsubtitle, #subtitle{
+       font-size: 1.2em;
+   }
+}
+
 
 /* Section-about */
 section{
@@ -209,17 +216,27 @@ section{
 }
 .container-experience{
     padding:0 0 10em 0;
-    margin:0 2em 0 2em;
+    margin:0 1.5em 0 1.5em;
     
 }
 .container-internship{
     padding:0 0 10em 0;
-    margin:0 2em 0 2em;
+    margin:0 1.5em 0 1.5em;
     
 }
 .container-skills{
     padding:0 0 10em 0;
-    margin:0 2em 0 2em;
+    margin:0 1.5em 0 1.5em;
+    
+}
+.container-projects{
+    padding:0 0 10em 0;
+    margin:0 1.5em 0 1.5em;
+    
+}
+.container-paper{
+    padding:0 0 10em 0;
+    margin:0 1.5em 0 1.5em;
     
 }
 .container-card {
@@ -289,10 +306,6 @@ section{
     font-weight: bold;
   }
 
-.container-projects{
-    padding:0 0 10em 0;
-    margin:0 2em 0 2em;
-}
 .container-projects img{
     width: 2em;
     height: 2em;
