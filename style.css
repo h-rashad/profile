@@ -185,7 +185,7 @@ nav ul a:focus{
     }
 }
 
-@media(max-width:345px){
+@media(max-width:320px){
     
     #fixsubtitle, #subtitle{
        font-size: 1em;
