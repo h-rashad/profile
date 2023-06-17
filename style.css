@@ -496,4 +496,5 @@ footer{
 .social ol li a:hover{
  color:rgb(58, 72, 197);
  text-decoration: underline;
+ font-weight: bold;
 }
