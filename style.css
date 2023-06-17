@@ -97,6 +97,7 @@ color: rgb(255, 0, 255);
     margin-right: .3em;
     padding-left: .3em;
     /* text-transform: uppercase; */
+
 }
 
 nav ul{
@@ -107,11 +108,14 @@ nav ul{
     justify-content: center;
 }
 nav li{
-    margin-left:1em;
-}
-li:nth-child(4){
+    margin-left: 1em;
     margin-right: 1em;
 }
+
+/*li:nth-child(4){
+    margin-right: 1em;
+}*/
+
 nav a{
     text-decoration: none;
     color:blue;
@@ -185,9 +189,10 @@ nav ul a:focus{
     }
 }
 
-@media(min-width:349px){
+@media(min-width:345px){
+    
     #fixsubtitle, #subtitle{
-       font-size: 1.2em;
+       font-size: 1em;
    }
 }
 
@@ -196,18 +201,18 @@ nav ul a:focus{
 section{
     overflow-x: hidden;
     background: #282828;
-    margin: auto;
     font-size: .91rem;
     /* overflow-y: hidden;
     overflow-x: hidden; */
 }
 .container-section{
     /* padding-top: 5em; */
-    width: 100%;
     max-width: 900px;
     margin-top:auto;
     color: white;
-    margin:5em 0 5em 0;
+    margin: 0em 0.5em 0em 0.5em;
+    
+
 }
 .container-about{
     padding:5em 0 10em 0;
@@ -215,52 +220,52 @@ section{
 }
 .container-experience{
     padding:0 0 10em 0;
-    margin:0 1.5em 0 1.5em;
+    /*margin:0 1.5em 0 1.5em;*/
     
 }
 .container-internship{
     padding:0 0 10em 0;
-    margin:0 1.5em 0 1.5em;
-    
+    /*margin:0 1.5em 0 1.5em;*/
+
 }
 .container-skills{
     padding:0 0 10em 0;
-    margin:0 1.5em 0 1.5em;
-    
+    /*margin:0 1.5em 0 1.5em;*/
+
 }
 .container-projects{
     padding:0 0 10em 0;
-    margin:0 1.5em 0 1.5em;
-    
+    /*margin:0 1.5em 0 1.5em;*/
+
 }
 .container-paper{
     padding:0 0 10em 0;
-    margin:0 1.5em 0 1.5em;
+    /*margin:0 1.5em 0 1.5em;*/
     
 }
 .container-card {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: 1em;
 }
 
 
 
 .container-card .flex-item .highlight:hover{
-            font-weight: bold;
-            color: blue;
-            cursor: pointer;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
 }
 
 .flex-item {
-    margin:.5em;
+    margin: 0.5em;
     margin-bottom:1em;
     color: black;
     background-color: #f1f1f1;
     padding:1em;
     flex: 100%;
-    border-radius: 1em;
+    border-radius: 1.5em;
+    border-bottom: solid 3px black;
   }
 
 /* Experience Container card*/
@@ -319,7 +324,7 @@ section{
 }
 .container-contact{
     padding:0;
-    margin:0 2em 0 2em;
+    /*margin:0 2em 0 2em;*/
 }
 #about,#experience,#internship,#skills,#projects,#paper,#contact{
     font-size: 1.5em;
@@ -339,7 +344,7 @@ p{
    .container-section{
     width: 50%;
     max-width: 500px;
-    margin:auto;
+    margin: auto;
     color: white;
 }
 .container-about{
@@ -473,3 +478,22 @@ footer{
       text-decoration: none;
       color: white;
   }
+
+#profile{
+    background: url(photo/profile.png)no-repeat center/cover;
+    margin-top:10px ;
+    padding:50%;
+    border-radius:50%;
+    border:solid 1px #f1f1f1;
+}
+
+.social ol{
+    padding: 0;
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+}
+.social ol li a:hover{
+ color:rgb(58, 72, 197);
+ text-decoration: underline;
+}
