@@ -185,7 +185,7 @@ nav ul a:focus{
     }
 }
 
-@media(max-width:350px){
+@media(max-width:345px){
     
     #fixsubtitle, #subtitle{
        font-size: 1.2em;
@@ -359,8 +359,11 @@ p{
     padding: 5em 0 10em 0;
     margin: 0;
 }
-
 .container-projects{
+    padding: 5em 0 10em 0;
+    margin: 0;
+}
+.container-paper{
     padding: 5em 0 10em 0;
     margin: 0;
 }
@@ -428,6 +431,12 @@ footer{
     outline: none;
     font-size: 16px;
     margin-top:0;
+
+  }
+
+  .text textarea{
+    max-width: 100%;
+    max-height: 250px;
 
   }
 
