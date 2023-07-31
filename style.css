@@ -218,12 +218,32 @@ section{
     padding:5em 0 10em 0;
     margin:0 2em 0 2em;
 }
+.container-about .center{
+    margin: auto;
+    text-align: center;
+    padding-inline: 10%;
+    font-size: 20px;
+    width: max-content;
+    border-radius: 10px;
+    
+
+}
+.container-about .center img{
+width: 60px;
+border-radius: 20px;
+
+}
 .container-experience{
     padding:0 0 10em 0;
     /*margin:0 1.5em 0 1.5em;*/
     
 }
 .container-internship{
+    padding:0 0 10em 0;
+    /*margin:0 1.5em 0 1.5em;*/
+
+}
+.container-certification{
     padding:0 0 10em 0;
     /*margin:0 1.5em 0 1.5em;*/
 
@@ -326,7 +346,7 @@ section{
     padding:0;
     /*margin:0 2em 0 2em;*/
 }
-#about,#experience,#internship,#skills,#projects,#paper,#contact{
+#about,#experience,#internship,#certification,#skills,#projects,#paper,#contact{
     font-size: 1.5em;
     text-align: center;
     color: aqua;
@@ -486,6 +506,12 @@ footer{
     border-radius:50%;
     border:solid 1px #f1f1f1;
 }
+/* .container-about .center{
+    background: url(photo/microsoft.svg)no-repeat center/cover;
+    margin-top: 10px;
+    padding:10%;
+    background-size: auto;    
+} */
 
 .social ol{
     padding: 0;
@@ -497,4 +523,16 @@ footer{
  color:rgb(58, 72, 197);
  text-decoration: underline;
  font-weight: bold;
+}
+.last{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.last a{
+    text-decoration: none;
+    color: transparent;
+}
+.last a:hover{
+    color: whitesmoke;
 }

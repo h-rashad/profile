@@ -54,6 +54,18 @@ var typewriter = new Typewriter(internship, {
 		delay: 80,
 		
 	  });	
+
+//intern
+var internship = document.getElementById('certification');
+var typewriter = new Typewriter(certification, {
+
+	strings:['certification'],
+	
+	autoStart: true,
+	  loop: true,
+		delay: 80,
+		
+	  });	
 //skills
 var skills = document.getElementById('skills');
 var typewriter = new Typewriter(skills, {
