@@ -149,3 +149,15 @@ document.querySelector("#contactForm").addEventListener("submit", function (e) {
 	});
 
 
+	// Check if page_view entry is present
+	var counterContainer = document.querySelector(".visitors-counter");
+	var visitCount = localStorage.getItem("page_view");
+
+	if (visitCount) {
+	visitCount = Number(visitCount) + 1;
+	localStorage.setItem("page_view", visitCount);
+	} else {
+	visitCount = 0;
+	localStorage.setItem("page_view", 1);
+	}
+	counterContainer.innerHTML = visitCount;
