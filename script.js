@@ -6,7 +6,7 @@ var typewriter = new Typewriter(subtitle, {
 });
 
 typewriter
-	.typeString("<strong>Programmer</strong>")
+	.typeString("<strong>Tech Enthusiast</strong>")
 	.pauseFor(500)
 	.deleteAll()
 	.typeString("<strong>Software Developer</strong>")

@@ -217,6 +217,8 @@ section{
 .container-about{
     padding:5em 0 10em 0;
     margin:0 2em 0 2em;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .container-about .center{
     margin: auto;
@@ -226,13 +228,12 @@ section{
     width: max-content;
     border-radius: 10px;
     
-
 }
+
 .container-about .center img{
-width: 60px;
-border-radius: 20px;
-
+padding-top: 10px;
 }
+
 .container-experience{
     padding:0 0 10em 0;
     /*margin:0 1.5em 0 1.5em;*/
