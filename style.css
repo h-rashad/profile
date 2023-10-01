@@ -289,6 +289,37 @@ padding-top: 10px;
     border-bottom: solid 3px black;
   }
 
+.flex-item h4{
+margin: auto;
+padding-bottom: 10px;
+}
+
+.flex-item h4:hover{
+ padding: auto;
+ margin: auto;
+}
+
+.flex-item img:hover{
+    padding: auto;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+
+}
+
+.flex-item .oracle img{
+    width: 132px;
+    height: 150px;
+     object-fit: cover;
+
+}
+
+.flex-item .flowgear img{
+    width: 170px;
+    height: 180px;
+     object-fit: cover;
+}
+
+
 /* Experience Container card*/
  .container-experience img{
       height: 5em;
@@ -372,6 +403,8 @@ p{
     padding: 5em 0 10em 0;
     margin: 0;
 }
+
+
 /*.container-experience{
     padding: 5em 0 10em 0;
     margin: 0;
@@ -407,6 +440,26 @@ footer{
     .flex-item-right, .flex-item-left {
         flex: 100%;
       }
+
+      
+.flex-item .certificate img{
+    width: 90px;
+    height: 90px;
+     object-fit: cover;
+
+}
+
+.flex-item .certificate .oracle img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.flex-item .certificate .flowgear img{
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
+}
+
 }
 
 /* Contact */
