@@ -97,7 +97,7 @@ var typewriter = new Typewriter(projects, {
 var paper = document.getElementById('paper');
 var typewriter = new Typewriter(paper, {
 
-	strings:['Paper Work'],
+	strings:['Research Paper'],
 	
 	autoStart: true,
 	  loop: true,
