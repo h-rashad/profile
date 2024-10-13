@@ -9,7 +9,7 @@ typewriter
 	.typeString("<strong>Tech Enthusiast</strong>")
 	.pauseFor(500)
 	.deleteAll()
-	.typeString("<strong>Software Development Engineer</strong>")
+	.typeString("<strong>Software Engineer</strong>")
 	.pauseFor(500)
 	.deleteAll()
 	.typeString("<strong>Researcher</strong>"+" & "+"<strong>Publisher</strong>")
