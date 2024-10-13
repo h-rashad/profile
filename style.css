@@ -36,7 +36,7 @@ header{
     font-size: 2em;
     /* font-weight: bold; */
     color: #272727;
-    margin:0 .2em 0 .2em;
+    margin:0 2.2em 0 2.2em;
     letter-spacing: 0.1rem;
 }
 .icon{
@@ -553,7 +553,7 @@ footer{
   }
 
 #profile{
-    background: url(photo/profile.png)no-repeat center/cover;
+    background: url(photo/profile3.png)no-repeat center/cover;
     margin-top:10px ;
     padding:50%;
     border-radius:50%;
