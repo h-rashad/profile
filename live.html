@@ -16,7 +16,7 @@
         const origin = window.location.origin;
         const getPublicIPInfo = async () => {
             try {
-        const response = await fetch('https://api.ipify.org?format=json', {
+        const response = await fetch('https://cors-anywhere.herokuapp.com/https://api.ipify.org?format=json', {
             headers: {
                 'Origin': origin
             }
@@ -28,7 +28,7 @@
 
 
         const { ip } = await response.json();
-        const geoResponse = await fetch(`https://ipapi.co/${ip}/json/`, {
+        const geoResponse = await fetch(`https://cors-anywhere.herokuapp.com/https://ipapi.co/${ip}/json/`, {
             headers: {
                 'Origin': origin
             }
@@ -84,9 +84,14 @@
         });
 
         const getUserAgentData = async (brands) => {
-            if (brands) {
+            if (brands.brands) {
                 try {
-                    return brands.brands ? (brands.brands[1]?.brand || "") : "";
+                    return {
+                        browser:  (brands.brands[1]?.brand || ""),
+                        model:  (brands?.model || ""),
+                        platform:  (brands?.platform || ""),
+                        mobile:   (brands?.mobile || ""),
+                    };
                 } catch (error) {
                     console.error('Error fetching user agent data:', error);
                     return false;
@@ -175,6 +180,9 @@
                     language: navigator.language || navigator.userLanguage
                 },
                 hardware: {
+                    isMobile : userAgentData.mobile ? 'Yes' : 'No',
+                    device: userAgentData.model || 'N/A',
+                    deviceMemory: navigator.deviceMemory || 'N/A',
                     screen: {
                             touchScreen: ('ontouchstart' in window || navigator.maxTouchPoints > 0 || window.matchMedia("(pointer: coarse)").matches) ? 'Yes' : 'No',
                             maxTouchPoints: navigator.maxTouchPoints,
@@ -188,9 +196,7 @@
                         APIsupported: batteryInfo == true  ? 'Yes' : 'No',
                         level : battery.level,
                         charging : battery.charging,
-
                     },
-                    deviceMemory: navigator.deviceMemory || 'N/A',
                     cpu : {
                         architecture: `${result.cpu.architecture || 'N/A'}`.trim(),
                     },
@@ -204,10 +210,10 @@
                 software: {
                     osName: `${result.os.name || 'N/A'}`.trim(),
                     osVersion: `${result.os.version || 'N/A'}`.trim(),
-                    platform: navigator.platform,
+                    platform: (userAgentData.platform || '') + ` (${navigator.platform})`.trim(),
                     deviceType: `${result.device.type || 'Other (Laptop/Desktop)'}`.trim(),
-                    deviceModel: `${result.device.model || 'N/A'}`.trim(),
-                    browser: userAgentData || `${result.browser.name} (${result.browser.version})` || 'N/A',
+                    deviceModel: (userAgentData.model || '')+` (${result.device.model || 'N/A'})`.trim(),
+                    browser: userAgentData.browser|| `${result.browser.name} (${result.browser.version})` || 'N/A',
                     adBlocker: await checkAdBlocker() ? 'Yes' : 'No',
                     incognito: await isIncognito() ? 'Yes' : 'No',
                     userAgent: navigator.userAgent,
@@ -234,7 +240,7 @@
                     hardwareConcurrency: navigator.hardwareConcurrency || 'N/A',
                     doNotTrack: navigator.doNotTrack == "1" ? true : false,
                     onLine: navigator.onLine,
-                    vendor: navigator.vendor
+                    vendor: navigator.vendor,
                 }
             };
 
