@@ -168,6 +168,16 @@
             const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {};
             const localIPs = await getLocalIP();
 
+                        // Custom connection type message
+            let connectionTypeMessage = "Connection type: ";
+            if (connection.type === 'wifi') {
+                connectionTypeMessage = " Wi-Fi";
+            } else if (connection.type === 'cellular') {
+                connectionTypeMessage = "Mobile data.";
+            } else {
+                connectionTypeMessage = 'Connection information is not available. Connection type: '+connection.effectiveType || 'N/A';
+            }
+
 
 
 
