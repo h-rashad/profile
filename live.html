@@ -175,7 +175,7 @@
             } else if (connection.type === 'cellular') {
                 connectionTypeMessage = "Mobile data.";
             } else {
-                connectionTypeMessage = 'Connection information is not available. Connection type: '+connection.effectiveType || 'N/A';
+                connectionTypeMessage = 'Connection information is not available. Connection effectiveType: '+connection.effectiveType+'. Connection Type: '+connection.type || 'N/A';
             }
 
 
@@ -233,7 +233,7 @@
 
                 },
                 network: {
-                    connectionType: connection.effectiveType || 'N/A',
+                    connectionType: connectionTypeMessage || 'N/A',
                     hostName: window.location.hostname || 'N/A',
                     referringURL: document.referrer || 'N/A',
                     publicIP: publicIPInfo.ip || 'N/A',
