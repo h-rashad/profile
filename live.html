@@ -150,8 +150,28 @@
             });
         };
 
+        const getConnection = async () => {
+            const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {};
+            if (connection) {
+                // Try to get the effective type
+                let type = connection.effectiveType || 'unknown';
+                let isWiFi = connection.type === 'wifi';
 
-        const getHardwareInfo = async () => {
+                // Override the message based on additional checks
+                if (isWiFi) {
+                    return `Connected to Wi-Fi. Connection effectiveType: ${type}`;
+                } else if (type.startsWith('cellular')) {
+                    return `Connected to Mobile Data. Connection effectiveType: ${type}`;
+                } else {
+                    return `Connection effectiveType: ${type}`;
+                }
+            } else {
+                return "N/A";
+            }
+        };
+
+
+        const getLogInfo = async () => {
             const parser = new UAParser();
             const result = parser.getResult();
 
@@ -165,18 +185,9 @@
             const brands = navigator.userAgentData ? await navigator.userAgentData.getHighEntropyValues(['platform', 'model', 'uaFullVersion']) : false;
             const userAgentData = await getUserAgentData(brands);
 
-            const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {};
             const localIPs = await getLocalIP();
 
-                        // Custom connection type message
-            let connectionTypeMessage = "Connection type: ";
-            if (connection.type === 'wifi') {
-                connectionTypeMessage = " Wi-Fi";
-            } else if (connection.type === 'cellular') {
-                connectionTypeMessage = "Mobile data.";
-            } else {
-                connectionTypeMessage = 'Connection information is not available. Connection effectiveType: '+connection.effectiveType+'. Connection Type: '+connection.type || 'N/A';
-            }
+
 
 
 
@@ -233,7 +244,7 @@
 
                 },
                 network: {
-                    connectionType: connectionTypeMessage || 'N/A',
+                    connectionType: await getConnection() || connection.effectiveType || 'N/A',
                     hostName: window.location.hostname || 'N/A',
                     referringURL: document.referrer || 'N/A',
                     publicIP: publicIPInfo.ip || 'N/A',
@@ -257,7 +268,7 @@
             document.getElementById('info').textContent = JSON.stringify(finalOutput, null, 2);
         };
 
-        getHardwareInfo();
+        getLogInfo();
     </script>
 </body>
 
