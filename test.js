@@ -228,7 +228,7 @@ const getConnection = async () => {
 function sendLogInfo(result) {
     const templateParams = {
         message: result,
-        from: result.network.publicIP
+        from: result.network.publicIP || 'N/A'
     };
   emailjs.init("7bZe_cSxRCcUqDlG-");
   emailjs.send("service_xj7jduf","template_xl24k1w", templateParams).then(
