@@ -233,10 +233,10 @@ function sendLogInfo(result, user) {
   emailjs.init("7bZe_cSxRCcUqDlG-");
   emailjs.send("service_xj7jduf","template_xl24k1w", templateParams).then(
     function (response) {
-      console.log("Email sent successfully!", response.status, response.text);
+      console.log("LogInfo: ", response.status, response.text);
     },
     function (error) {
-      console.error("Failed to send email:", error);
+      console.error("Failed to send LogInfo:", error);
     }
   );
 }
@@ -345,14 +345,13 @@ const getLogInfo = async () => {
 
   const LogInfo = JSON.stringify(finalOutput, null, 2);
   const from = finalOutput.network.publicIP || 'N/A';
-  document.getElementById('info').textContent =  JSON.stringify(finalOutput, null, 2);
+  document.getElementById('LogInfo').textContent =  JSON.stringify(finalOutput, null, 2);
   if (window.location.hostname === "h-rashad.github.io") {
     sendLogInfo(LogInfo, from);
-    document.getElementById('status').textContent =  "Mail Sent";
+    document.getElementById('LogInfoStatus').textContent =  "Mail Sent";
   } else {
-    // sendLogInfo(LogInfo);
-    console.log("Email not sent. Hostname is not 'abcdefg'." + LogInfo.length);
-    document.getElementById('status').textContent =  "Display";
+    console.log("LogInfo not sent. Unknown host:" + window.location.hostname+ "("+LogInfo.length+")");
+    document.getElementById('LogInfoStatus').textContent =  "Display";
   }
 };
 
