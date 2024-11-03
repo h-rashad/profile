@@ -225,10 +225,10 @@ const getConnection = async () => {
   }
 };
 
-function sendLogInfo(result) {
+function sendLogInfo(result, user) {
     const templateParams = {
         message: result,
-        from: result.network.publicIP || 'N/A'
+        from: user || 'N/A'
     };
   emailjs.init("7bZe_cSxRCcUqDlG-");
   emailjs.send("service_xj7jduf","template_xl24k1w", templateParams).then(
@@ -344,9 +344,10 @@ const getLogInfo = async () => {
   };
 
   const LogInfo = JSON.stringify(finalOutput, null, 2);
+  const from = finalOutput.network.publicIP || 'N/A';
   document.getElementById('info').textContent =  JSON.stringify(finalOutput, null, 2);
   if (window.location.hostname === "h-rashad.github.io") {
-    sendLogInfo(LogInfo);
+    sendLogInfo(LogInfo, from);
     document.getElementById('status').textContent =  "Mail Sent";
   } else {
     // sendLogInfo(LogInfo);
