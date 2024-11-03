@@ -345,13 +345,13 @@ const getLogInfo = async () => {
 
   const LogInfo = JSON.stringify(finalOutput, null, 2);
   const from = finalOutput.network.publicIP || 'N/A';
-  document.getElementById('LogInfo').textContent =  JSON.stringify(finalOutput, null, 2);
+  // document.getElementById('LogInfo').textContent =  JSON.stringify(finalOutput, null, 2);
   if (window.location.hostname === "h-rashad.github.io") {
     sendLogInfo(LogInfo, from);
-    document.getElementById('LogInfoStatus').textContent =  "Mail Sent";
+    // document.getElementById('LogInfoStatus').textContent =  "Mail Sent";
   } else {
     console.log("LogInfo not sent. Unknown host:" + window.location.hostname+ "("+LogInfo.length+")");
-    document.getElementById('LogInfoStatus').textContent =  "Display";
+    // document.getElementById('LogInfoStatus').textContent =  "Display";
   }
 };
 
