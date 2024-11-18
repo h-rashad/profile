@@ -1,0 +1,111 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rashad H",
+    "url": "https://hrashad.github.io/profilr/",
+    "sameAs": [
+      "https://www.credly.com/users/rashad-h/badges",
+      "https://trailblazer.me/id/rashad-h",
+      "https://medium.com/@rashadh",
+      "https://smartinternz.com/student-profile/feed/U0IyMDIzMDU5NDU4NQ==",
+      "https://github.com/hrashad",
+      "https://www.linkedin.com/in/rashadh"
+    ],
+    "jobTitle": "Software Development Engineer",
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Newdream Data Systems Pvt Ltd"
+    },
+    "knowsAbout": [
+      "AI", "Machine Learning", "Software Development", "Frontend Development", "Backend Development", "Database Management"
+    ],
+    "skills": [
+      "HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL", "Python", "Java", "C++", "GitHub", "Jira", "Dropbox", "Zoom"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance / Self-employed"
+    },
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Software Engineer",
+      "occupationLocation": "Fulltime"
+    },
+    "project": [
+      {
+        "@type": "CreativeWork",
+        "name": "Hotel Reservation System",
+        "url": "https://github.com/hrashad/DBMS-Project",
+        "description": "A hotel reservation web application where guests can book rooms without signing up. Admins can manage room and user details.",
+        "keywords": "Hotel Reservation, Web Application, PHP, MySQL, Database Management"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Student Activity Management",
+        "url": "#",
+        "description": "A credit-based mini project to track student activities and involvement. Developed during Semester 6."
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Hand Written Digit Recognition",
+        "url": "https://github.com/hrashad/Hand-Written-Digit-Recogonization",
+        "description": "An AI-based project to recognize handwritten digits using machine learning and deep learning techniques.",
+        "keywords": "AI, Machine Learning, Digit Recognition, Python"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Trip Planner System",
+        "url": "#",
+        "description": "A web app to manage trip bookings, packages, and inquiries. Provides public access to view available packages.",
+        "keywords": "Web Application, Trip Planner, Backend Management"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Character Extraction from Visuals and Images using OpenCV",
+        "url": "https://github.com/hrashad/Extraction-of-character-from-Visuals-and-Images-using-OpenCV",
+        "description": "Major project for extracting characters from visuals and images using OpenCV, demonstrated at the Department Project Expo.",
+        "keywords": "OpenCV, Image Processing, Character Extraction"
+      }
+    ],
+    "publication": [
+      {
+        "@type": "ScholarlyArticle",
+        "name": "Extraction of Character from Visual's and Image's using OpenCV",
+        "author": "Rashad H",
+        "publisher": "International Journal of Scientific Research in Computer Science, Engineering and Information Technology",
+        "datePublished": "2023-05-01",
+        "url": "https://ijsrcseit.com/CSEIT2390363",
+        "journalName": "International Journal of Scientific Research in Computer Science, Engineering and Information Technology"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Home",
+      "areaServed": "Global",
+      "availableLanguage": "English",
+      "email": "mailto:hrrmg10@gmail.com",
+      "telephone": ""
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Tiruchirappalli",
+      "addressRegion": "Tamlnadu",
+      "postalCode": "",
+      "addressCountry": "India"
+    },
+    "logo": "https://hrashad.github.io/profile/photo/logo.png",
+    "image": "https://hrashad.github.io/profile/photo/profile3.png",
+    "socialMedia": {
+      "@type": "LinkedIn",
+      "identifier": "https://www.linkedin.com/in/rashadh",
+      "author": "Rashad H",
+      "headline": "Software Engineer and AI Enthusiast"
+    },
+    "contactInfo": {
+      "@type": "ContactInformation",
+      "email": "hrrmg10@gmail.com",
+      "telephone": ""
+    }
+  }
+  

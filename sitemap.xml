@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Home Page -->
+    <url>
+        <loc>https://h-rashad.github.io/profile/</loc>
+        <lastmod>2024-11-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About -->
+    <url>
+        <loc>https://h-rashad.github.io/profile/#about</loc>
+        <lastmod>2024-11-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Contact Page -->
+    <url>
+        <loc>https://h-rashad.github.io/profile/#connect</loc>
+        <lastmod>2024-11-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- certification -->
+    <url>
+        <loc>https://h-rashad.github.io/profile/#certification</loc>
+        <lastmod>2024-11-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Publication -->
+    <url>
+        <loc>https://h-rashad.github.io/profile/#paper</loc>
+        <lastmod>2024-11-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>

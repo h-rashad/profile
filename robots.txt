@@ -1,0 +1,9 @@
+# Allow all web crawlers to access everything
+User-agent: *
+Disallow: /index.js
+
+# Allow access to images, videos, and other public assets
+Allow: /
+
+# Sitemap location 
+Sitemap: https://h-rashad.github.io/profile/sitemap.xml
