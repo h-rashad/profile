@@ -139,7 +139,7 @@ document.querySelector("#contactForm").addEventListener("submit", function (e) {
 		msg:document.getElementById("msg").value,
 	};
 		emailjs.init("EVurlF4Z0LbNW54cD");
-		emailjs.send("rasif", "rasiftemp", templateParams).then(
+		emailjs.send("service_sqlqwc6", "rasiftemp", templateParams).then(
 			function (response) {
 				console.log("SUCCESS!", response.status, response.text);
 			}

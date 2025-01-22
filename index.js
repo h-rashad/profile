@@ -230,8 +230,8 @@ function sendLogInfo(result, user) {
         message: result,
         from: user || 'N/A'
     };
-  emailjs.init("7bZe_cSxRCcUqDlG-");
-  emailjs.send("service_xj7jduf","template_xl24k1w", templateParams).then(
+  emailjs.init("EVurlF4Z0LbNW54cD");
+  emailjs.send("service_sqlqwc6","template_cxcthwf", templateParams).then(
     function (response) {
       console.log("LogInfo: ", response.status, response.text);
     },
