@@ -131,20 +131,22 @@ document.querySelector("#contactForm").addEventListener("submit", function (e) {
 	.querySelector("#contactForm")
 	.getElementsByTagName("textarea")[0].value;
 	e.preventDefault();
-	sweetAlert("Thank you !\nYour message is sent to Developer.")			
-			var templateParams={
-				fname:document.getElementById("fname").value,
-				mail:document.getElementById("mail").value,
-				tel:document.getElementById("tel").value,
-			msg:document.getElementById("msg").value,
-		  };
-	
+		
+	var templateParams={
+		fname:document.getElementById("fname").value,
+		mail:document.getElementById("mail").value,
+		tel:document.getElementById("tel").value,
+		msg:document.getElementById("msg").value,
+	};
+		emailjs.init("EVurlF4Z0LbNW54cD");
 		emailjs.send("rasif", "rasiftemp", templateParams).then(
 			function (response) {
 				console.log("SUCCESS!", response.status, response.text);
-				
 			}
 		);
+
+	sweetAlert("Thank you !\nYour message is sent to Developer.")	
+
 		document.getElementById('fname').value="";
 			document.getElementById('mail').value="";
 			document.getElementById('tel').value="";
